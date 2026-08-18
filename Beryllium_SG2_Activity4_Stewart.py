@@ -1,6 +1,7 @@
 def greet_students(name, nChar):
-    for i in range (nChar):
-        print (name[i])
+    for i in range(nChar):
+       if i < len(name):
+           print(name[i])
 
 name = input("Enter a Name : ")
 nChar = input("Enter any numeric number : ")
@@ -21,6 +22,7 @@ greet_students(name, nChar)
     #s
     #e
     #p
+    #h
     
     #T
     #h
@@ -44,4 +46,3 @@ greet_students(name, nChar)
     #       print(name[i])
 
 # Meaning that if name = Joseph The Dreamer and nChar = 20, it will print all 18 characters and stop, while no longer producing an IndexError.
-# So the full code can be modified...
