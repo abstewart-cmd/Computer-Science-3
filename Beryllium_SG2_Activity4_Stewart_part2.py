@@ -1,8 +1,8 @@
 def greet_students(name, nChar):
-    for i in range(nChar):
-        print(name[0 : nChar])
+    for i in range(nChar, 0, -1):
+        print(name[0 : i])
 
-name = input("Enter a Name")
+name = input("Enter a Name: ")
 greet_students(name, len(name))
 
 # a. So, name[0:nChar] always uses the same nChar, meaning it doesn't change inside the loop.
