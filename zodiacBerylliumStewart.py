@@ -1,9 +1,14 @@
+# Get the birth year of user. Very important.
 birth_year = int(input("Enter your birth year: "))
-chinese_zodiac_sign = str("")
 
+# Placeholder of the zodiac for now.
+chinese_zodiac_sign = str("Empty")
+
+# Start the first selection structure. If birth year < 1900, it will end the program.
 if birth_year < 1900:
     print("Invalid Year, it should not be earlier than 1900.")
 
+# Though, if birth year is instead > 1900, then it selects their zodiac based on its divisibility by 12, and changes the variable's contents to the corresponding string.
 else:
     if birth_year % 12 == 0:
         chinese_zodiac_sign = "Monkey (猴 / Hóu)"
@@ -41,7 +46,9 @@ else:
     elif birth_year % 12 == 11:
         chinese_zodiac_sign = "Goat (羊 / Yáng)"
 
+    # Just incase somebody makes the most IMPOSSIBLE error ever, you know?
     else:
         print("There seems to have been an impossible error. Try again!")
 
+# Finally, tell the user their zodiac sign.
 print("Your Chinese Zodiac Sign is : ", chinese_zodiac_sign)
