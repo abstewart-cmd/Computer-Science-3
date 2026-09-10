@@ -32,3 +32,6 @@ take_damage(hero1)
 # Morgana is at full health
 
 print(hero2.name, "is at full health!")
+
+# Challenge Thinking Question:
+# If we had 100 heroes and only Arthur took damage, we would still have 100 class boxes since we need to show what happened to each one.
